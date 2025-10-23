@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Updated theme colors to modern palette: deep indigo primary, emerald accents, sophisticated neutrals */
+@theme {
+  /* Màu chủ đạo */
+  --color-primary: #78716c;        /* stone-500 */
+  --color-primary-dark: #57534e;   /* stone-600 */
+
+  /* Màu nhấn (accent) – nhẹ, tự nhiên, hơi ấm */
+  --color-accent: #a8a29e;         /* stone-400 */
+  --color-accent-light: #e7e5e4;   /* stone-200 */
+
+  /* Màu nền/tối/sáng – trung tính, phù hợp với tone stone */
+  --color-dark: #292524;           /* stone-800 */
+  --color-light: #fafaf9;         /* stone-50 */
+}
+
+/* Rich text editor styling */
+.rich-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.rich-text p {
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.rich-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a !important;
+  margin: 32px 0;
+}
+
+.rich-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a !important;
+  margin: 24px 0;
+}
+
+.rich-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b !important;
+  margin: 20px 0;
+}
+
+.rich-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155 !important;
+  margin: 16px 0;
+}
+
+.rich-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569 !important;
+  margin: 12px 0;
+}
+
+.rich-text h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b !important;
+  margin: 8px 0;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+
+.rich-text ul {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+
+.rich-text li {
+  margin-bottom: 8px;
+}
+
+.rich-text a {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+/* Quill editor customization */
+.ql-container {
+  font-size: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.ql-editor {
+  min-height: 300px;
+  padding: 16px;
+}
+
+.ql-toolbar {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px 8px 0 0;
+  background: #f8fafc;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
