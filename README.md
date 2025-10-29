@@ -1,7 +1,6 @@
-# <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/6cc302f3-16e5-4977-9428-7a22611ab940" />
-nguyenBlog - Nền tảng Blog Hiện đại
+# nguyenBlog - Nền tảng Blog Hiện đại
 
-NguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng React, Node.js và MongoDB. Nó cung cấp một giao diện người dùng thân thiện để đọc blog và một bảng điều khiển quản trị viên mạnh mẽ để quản lý nội dung.
+nguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng React, Node.js và MongoDB. Nó cung cấp một giao diện người dùng thân thiện để đọc blog và một bảng điều khiển quản trị viên mạnh mẽ để quản lý nội dung.
 
 ## 🌟 Tính năng chính
 
@@ -35,7 +34,7 @@ nguyenBlog/
 │   │   └── main.jsx         # Entry point
 │   ├── package.json
 │   └── vite.config.js
-├── backend/                  # API Node.js (nếu có)
+├── backend/                  
 └── README.md
 \`\`\`
 
@@ -51,7 +50,7 @@ nguyenBlog/
 - **React Hot Toast** - Notifications
 - **Moment.js** - Xử lý ngày tháng
 
-### Backend (nếu có)
+### Backend
 - **Node.js** - Runtime
 - **Express** - Web framework
 - **MongoDB** - Database
@@ -108,7 +107,7 @@ npm run build
 ## 🔐 Xác thực quản trị viên
 
 Để truy cập bảng điều khiển quản trị:
-1. Nhấp vào nút "Đi đến Dashboard" trên trang chủ
+1. Nhấp vào nút "Đi đến Tổng quan" trên trang chủ
 2. Đăng nhập bằng thông tin quản trị viên
 3. Quản lý bài blog và bình luận
 
@@ -155,6 +154,3 @@ Dự án này được cấp phép dưới MIT License.
 Cảm ơn bạn đã sử dụng NguyenBlog! Nếu bạn thích dự án này, vui lòng cho nó một ⭐ trên GitHub.
 
 ---
-
-**Phiên bản**: 1.0.0  
-**Cập nhật lần cuối**: 2025-10-29
