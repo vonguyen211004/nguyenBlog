@@ -1,4 +1,5 @@
-# NguyenBlog - Nền tảng Blog Hiện đại
+# <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/6cc302f3-16e5-4977-9428-7a22611ab940" />
+nguyenBlog - Nền tảng Blog Hiện đại
 
 NguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng React, Node.js và MongoDB. Nó cung cấp một giao diện người dùng thân thiện để đọc blog và một bảng điều khiển quản trị viên mạnh mẽ để quản lý nội dung.
 
