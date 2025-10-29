@@ -6,7 +6,7 @@ export const adminLogin = async (req, res) =>{
     try {
         const {email, password} = req.body;
         if (email !== process.env.ADMIN_EMAIL || password !== process.env.ADMIN_PASSWORD){
-            return res.json({success: false, message: "Invalid Credentials"})
+            return res.json({success: false, message: "Email hoặc mật khẩu không đúng."});
         }
         
         const token = jwt.sign({email}, process.env.JWT_SECRET_KEY, {expiresIn: '1d'})
@@ -56,7 +56,7 @@ export const deleteCommentById = async (req, res) => {
     try {
         const {id} = req.body;
         await Comment.findByIdAndDelete(id);
-        res.json({success: true, message: "Comment deleted successfully"})
+        res.json({success: true, message: "Bình luận đã được xóa thành công."})
     } catch (error) {
         res.json({success: false, message: error.message})
     }
@@ -66,7 +66,7 @@ export const approveCommentById = async (req, res) => {
     try {
         const {id} = req.body;
         await Comment.findByIdAndUpdate(id, {isApproved: true});
-        res.json({success: true, message: "Comment approve successfully"})
+        res.json({success: true, message: "Bình luận đã được phê duyệt thành công."})
     } catch (error) {
         res.json({success: false, message: error.message})
     }

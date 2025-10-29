@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { useState, useRef } from "react"
-import { assets, blogCategories } from "../../assets/assets"
+import { assets, blogCategories, categoryTranslations } from "../../assets/assets"
 import Quill from "quill"
 import { useAppContext } from "../../context/useAppContext"
 import toast from "react-hot-toast"
@@ -92,7 +92,7 @@ const AddBlog = () => {
         <div className="space-y-8">
           {/* Thumbnail upload */}
           <div>
-            <label className="block text-sm font-semibold text-slate-900 mb-3">Cập nhật ảnh Thumbnail</label>
+            <label className="block text-sm font-semibold text-slate-900 mb-3">Thêm ảnh Thumbnail</label>
             <label htmlFor="image" className="block">
               <img
                 src={!image ? assets.upload_area : URL.createObjectURL(image)}
@@ -107,7 +107,7 @@ const AddBlog = () => {
             <label className="block text-sm font-semibold text-slate-900 mb-3">Tiêu đề</label>
             <input
               type="text"
-              placeholder="Enter an engaging title..."
+              placeholder="Nhập tên tiêu đề"
               required
               className="w-full p-3 border border-slate-300 outline-none rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               onChange={(e) => setTitle(e.target.value)}
@@ -120,7 +120,7 @@ const AddBlog = () => {
             <label className="block text-sm font-semibold text-slate-900 mb-3">Phụ đề</label>
             <input
               type="text"
-              placeholder="Add a compelling subtitle..."
+              placeholder="Nhập tên phụ đề"
               required
               className="w-full p-3 border border-slate-300 outline-none rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               onChange={(e) => setSubTitle(e.target.value)}
@@ -162,27 +162,11 @@ const AddBlog = () => {
               {blogCategories.map((item, index) => {
                 return (
                   <option key={index} value={item}>
-                    {item}
+                    {categoryTranslations[item]}
                   </option>
                 )
               })}
             </select>
-          </div>
-
-          {/* Publish checkbox */}
-          <div className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg border border-slate-200">
-            <input
-              type="checkbox"
-              id="publish"
-              checked={isPublished}
-              className="w-5 h-5 cursor-pointer accent-primary"
-              onChange={(e) => {
-                setisPublished(e.target.checked)
-              }}
-            />
-            <label htmlFor="publish" className="font-medium text-slate-900 cursor-pointer">
-              Xuất bản ngay lập tức
-            </label>
           </div>
 
           {/* Submit button */}

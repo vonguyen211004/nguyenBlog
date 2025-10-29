@@ -1,29 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&subset=vietnamese&display=swap");
 @import "tailwindcss";
 
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: "Noto Sans", "Outfit", sans-serif;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* Updated theme colors to modern palette: deep indigo primary, emerald accents, sophisticated neutrals */
 @theme {
-  /* Màu chủ đạo */
-  --color-primary: #78716c;        /* stone-500 */
-  --color-primary-dark: #57534e;   /* stone-600 */
+  /* 🎨 Màu chủ đạo – cam nhạt, ấm áp */
+  --color-primary: #f4a261; /* light orange */
+  --color-primary-dark: #e76f51; /* orange darker tone */
 
-  /* Màu nhấn (accent) – nhẹ, tự nhiên, hơi ấm */
-  --color-accent: #a8a29e;         /* stone-400 */
-  --color-accent-light: #e7e5e4;   /* stone-200 */
+  /* 🌿 Màu nhấn (accent) – nhẹ, tự nhiên, hơi be */
+  --color-accent: #f6bd60; /* pastel orange-yellow */
+  --color-accent-light: #ffe8d6; /* very light cream */
 
-  /* Màu nền/tối/sáng – trung tính, phù hợp với tone stone */
-  --color-dark: #292524;           /* stone-800 */
-  --color-light: #fafaf9;         /* stone-50 */
+  /* 🪵 Màu nền/tối/sáng – trung tính, hài hòa với tone cam */
+  --color-dark: #3d2b1f; /* warm dark brown */
+  --color-light: #fffaf3; /* off-white hơi cam nhạt */
 }
+
+
+
 
 /* Rich text editor styling */
 .rich-text {

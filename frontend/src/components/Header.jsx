@@ -44,7 +44,7 @@ const Header = () => {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Tìm kiếm blog..."
+            placeholder="Tìm kiếm bài viết..."
             className="w-full pl-6 outline-none text-slate-700 placeholder-slate-400"
             required
           />
@@ -63,7 +63,7 @@ const Header = () => {
             className="border border-slate-300 font-medium text-xs py-2 px-4 rounded-lg shadow-sm
                 cursor-pointer hover:bg-slate-50 transition-colors"
           >
-            Clear Search
+            Xóa nội dung tìm kiếm
           </button>
         )}
       </div>

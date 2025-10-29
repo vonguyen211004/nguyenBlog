@@ -25,7 +25,7 @@ const CommentTableItem = ({comment, fetchComments}) => {
 
     const deleteComment = async () => {
         try {
-            const confirm = window.confirm("Are you sure you want to delete this comment?");
+            const confirm = window.confirm("Bạn có chắc chắn muốn xóa bình luận này không?");
             if(!confirm) return;
             const {data} = await axios.post('/api/admin/delete-comment',{id: _id});
             if(data.success){

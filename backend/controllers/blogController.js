@@ -11,7 +11,7 @@ export const addBlog = async (req, res) =>{
 
         //Check if all fields are present
         if(!title || !description || !category || !imageFile) {
-            return res.json({success: false, message: "Missing required fields"})
+            return res.json({success: false, message: "Vui lòng điền tất cả các trường bắt buộc."});
         }
         
         const fileBuffer = fs.readFileSync(imageFile.path);
@@ -37,7 +37,7 @@ export const addBlog = async (req, res) =>{
         await Blog.create({title, subTitle, description, category, image, isPublished})
 
         res.json({
-            success: true, message: "Blog added successfully"
+            success: true, message: "Thêm bài viết thành công."
         })
 
     } catch (error) {
@@ -60,7 +60,7 @@ export const getBlogById = async (req, res) => {
         const {blogId} = req.params;
         const blog = await Blog.findById(blogId);
         if(!blog) {
-            return res.json({success: false, message: "Blog not found"});
+            return res.json({success: false, message: "Không tìm thấy bài viết."});
         }
         res.json({success: true, blog})
     } catch (error) {
@@ -76,7 +76,7 @@ export const deleteBlogById = async (req, res) => {
         //Delete all comments associated with the blog
         await Comment.deleteMany({blog: id});
 
-        res.json({success: true, message: 'Blog deleted successfully'})
+        res.json({success: true, message: 'Xóa bài viết thành công.'})
     } catch (error) {
         res.json({success: false, message: error.message})
     }
@@ -88,7 +88,7 @@ export const togglePublish = async (req, res) => {
         const blog = await Blog.findById(id);
         blog.isPublished = !blog.isPublished;
         await blog.save();
-        res.json({success: true, message: "Blog publish status updated"})
+        res.json({success: true, message: "Trạng thái bài viết đã được cập nhật."})
     } catch (error) {
         res.json({success: false, message: error.message}) 
     }
@@ -98,7 +98,7 @@ export const addComment = async (req, res) => {
     try {
         const {blog,  name, content} = req.body;
         await Comment.create({blog, name, content});
-        res.json({success: true, message: "Comment added successfully"})
+        res.json({success: true, message: "Thêm bình luận thành công, đang chờ phê duyệt."})
 
     } catch (error) {
         res.json({success: false, message: error.message})
@@ -119,7 +119,7 @@ export const getBlogComments = async (req, res) => {
 export const generateContent = async (req, res) => {
     try {
         const {prompt} = req.body;
-        const content = await main(prompt + 'Generate a blog content for this topic in simple text format')
+        const content = await main(prompt + '\n\nGenerate a detailed blog post based on the above title. Make sure the content is informative, engaging, and well-structured.');
         res.json({success: true, content})
     } catch (error) {
         res.json({success: false, message: error.message})

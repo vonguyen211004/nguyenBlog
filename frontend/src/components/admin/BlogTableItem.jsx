@@ -10,7 +10,7 @@ const BlogTableItem = ({blog, fetchBlogs, index}) => {
     const {axios} = useAppContext();
 
     const deleteBlog = async () => {
-        const confirm = window.confirm("Are you sure you want to delete this blog?");
+        const confirm = window.confirm("Bạn có chắc chắn muốn xóa bài viết này không?");
         if(!confirm) return;
         try {
             const {data} = await axios.post('/api/blog/delete',{id: blog._id});
@@ -44,13 +44,13 @@ const BlogTableItem = ({blog, fetchBlogs, index}) => {
         <th className='px-2 py-4'>{index}</th>
         <td className='px-2 py-4'>{title}</td>
         <td className='px-2 py-4 max-sm:hidden'>{BlogDate.toDateString()}</td>
-        <td className='px-2 py-4 max-sm:hidden'>
+        <td className='px-2 py-4 max-sm:hidden '>
             <p className={`${blog.isPublished ? "text-green-600" : 'text-orange-700'}`}>
-                {blog.isPublished ? 'Xuất bản' : 'Không xuất bản'}
+                {blog.isPublished ? 'Đã đăng bài viết' : 'Chưa đăng bài viết'}
             </p>
         </td>
         <td className='px-2 py-4 flex text-xs gap-3'>
-            <button onClick={togglePublish} className='border px-2 py-0.5 mt-1 rounded cursor-pointer'>{blog.isPublished ? 'Xuất bản' : 'Không xuất bản'}</button>
+            <button onClick={togglePublish} className='border px-2 py-0.5 mt-1 rounded cursor-pointer'>{blog.isPublished ? ' Không đăng bài' : 'Đăng bài'}</button>
             <img src={assets.cross_icon} alt="" className='w-8 hover:scale-110 transition-all cursor-pointer'
             onClick={deleteBlog}/>
         </td>

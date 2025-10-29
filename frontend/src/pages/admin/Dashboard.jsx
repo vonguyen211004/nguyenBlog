@@ -40,7 +40,7 @@ const Dashboard = () => {
           </div>
           <div>
             <p className="text-3xl font-bold text-slate-900">{dashboardData.blogs}</p>
-            <p className="text-slate-500 font-medium text-sm">Tổng số Blog</p>
+            <p className="text-slate-500 font-medium text-sm">Tổng số Bài viết</p>
           </div>
         </div>
 
@@ -66,7 +66,7 @@ const Dashboard = () => {
           </div>
           <div>
             <p className="text-3xl font-bold text-slate-900">{dashboardData.drafts}</p>
-            <p className="text-slate-500 font-medium text-sm">Tổng số Blog Nháp</p>
+            <p className="text-slate-500 font-medium text-sm">Tổng số Bài viết Nháp</p>
           </div>
         </div>
       </div>
@@ -84,10 +84,10 @@ const Dashboard = () => {
             <thead className="text-xs font-semibold text-slate-700 text-left uppercase bg-slate-50 border-b border-slate-200">
               <tr>
                 <th scope="col" className="px-6 py-4">
-                  #
+                  STT
                 </th>
                 <th scope="col" className="px-6 py-4">
-                  Tiêu đề bài viết
+                  Tiêu đề
                 </th>
                 <th scope="col" className="px-6 py-4 max-sm:hidden">
                   Ngày viết

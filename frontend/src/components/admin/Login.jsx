@@ -34,7 +34,7 @@ const Login = () => {
               <h1 className='text-3xl font-bold'>
                 Đăng nhập <span className='text-primary'>Admin</span> 
               </h1>
-              <p className='font-light'>Vui lòng đăng nhập để vào trang quản trị.</p>
+              <p className='font-light'>Vui lòng đăng nhập để vào Trang quản trị.</p>
             </div>
             <form onSubmit={handleSubmit} className='mt-6 w-full sm:max-w-md text-gray-600'>
               <div className='flex flex-col'>
@@ -43,7 +43,7 @@ const Login = () => {
                 border-b-2 border-gray-300 p-2 outline-none mb-6' />
               </div>
               <div className='flex flex-col'>
-                <label>Password</label>
+                <label>Mật khẩu</label>
                 <input onChange={(e)=>setPassword(e.target.value)} value={password} type="password" required placeholder='Nhập mật khẩu' 
                 className='border-b-2 border-gray-300 p-2 outline-none mb-6' />
               </div>
