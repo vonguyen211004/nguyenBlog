@@ -21,7 +21,21 @@ nguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng 
 
 ## 📂 Cấu trúc dự án
 
-<pre> ```bash nguyenBlog/ ├── frontend/ # Ứng dụng React │ ├── src/ │ │ ├── components/ # Các component React │ │ ├── pages/ # Các trang chính │ │ ├── pages/admin/ # Các trang quản trị │ │ ├── context/ # Context API cho state management │ │ ├── assets/ # Hình ảnh, icon và dữ liệu │ │ ├── index.css # Styles toàn cục │ │ └── main.jsx # Entry point │ ├── package.json │ └── vite.config.js ├── backend/ └── README.md ``` </pre>
+```text
+nguyenBlog/
+├── frontend/                 # Ứng dụng React
+│   ├── src/
+│   │   ├── components/       # Các component React
+│   │   ├── pages/            # Các trang chính
+│   │   ├── pages/admin/      # Các trang quản trị
+│   │   ├── context/          # Context API cho state management
+│   │   ├── assets/           # Hình ảnh, icon và dữ liệu
+│   │   ├── index.css         # Styles toàn cục
+│   │   └── main.jsx          # Entry point
+│   ├── package.json
+│   └── vite.config.js
+├── backend/
+└── README.md
 
 ## 🛠️ Công nghệ sử dụng
 
@@ -47,28 +61,23 @@ nguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng 
 - npm hoặc yarn
 
 ### Bước 1: Clone repository
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd nguyenBlog
-\`\`\`
+
 
 ### Bước 2: Cài đặt dependencies
-\`\`\`bash
 cd frontend
 npm install
-\`\`\`
+
 
 ### Bước 3: Chạy ứng dụng
-\`\`\`bash
 npm run dev
-\`\`\`
 
 Ứng dụng sẽ chạy tại `http://localhost:5173`
 
 ### Bước 4: Build cho production
-\`\`\`bash
 npm run build
-\`\`\`
 
 ## 📝 Danh mục Blog
 
@@ -113,12 +122,12 @@ npm run build
 
 ### Thay đổi màu sắc
 Chỉnh sửa các biến CSS trong `frontend/src/index.css`:
-\`\`\`css
+```css
 :root {
   --primary: #your-color;
   --primary-dark: #your-dark-color;
 }
-\`\`\`
+```
 
 ### Thêm danh mục mới
 1. Cập nhật `blogCategories` trong `frontend/src/assets/assets.js`
