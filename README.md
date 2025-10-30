@@ -36,6 +36,7 @@ nguyenBlog/
 │   └── vite.config.js
 ├── backend/
 └── README.md
+```
 
 ## 🛠️ Công nghệ sử dụng
 
