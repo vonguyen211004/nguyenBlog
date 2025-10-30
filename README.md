@@ -21,22 +21,7 @@ nguyenBlog là một ứng dụng blog toàn diện được xây dựng bằng 
 
 ## 📂 Cấu trúc dự án
 
-\`\`\`
-nguyenBlog/
-├── frontend/                 # Ứng dụng React
-│   ├── src/
-│   │   ├── components/      # Các component React
-│   │   ├── pages/           # Các trang chính
-│   │   ├── pages/admin/     # Các trang quản trị
-│   │   ├── context/         # Context API cho state management
-│   │   ├── assets/          # Hình ảnh, icon và dữ liệu
-│   │   ├── index.css        # Styles toàn cục
-│   │   └── main.jsx         # Entry point
-│   ├── package.json
-│   └── vite.config.js
-├── backend/                  
-└── README.md
-\`\`\`
+<pre> ```bash nguyenBlog/ ├── frontend/ # Ứng dụng React │ ├── src/ │ │ ├── components/ # Các component React │ │ ├── pages/ # Các trang chính │ │ ├── pages/admin/ # Các trang quản trị │ │ ├── context/ # Context API cho state management │ │ ├── assets/ # Hình ảnh, icon và dữ liệu │ │ ├── index.css # Styles toàn cục │ │ └── main.jsx # Entry point │ ├── package.json │ └── vite.config.js ├── backend/ └── README.md ``` </pre>
 
 ## 🛠️ Công nghệ sử dụng
 
