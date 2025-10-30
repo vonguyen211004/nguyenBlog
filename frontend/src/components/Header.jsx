@@ -61,7 +61,7 @@ const Header = () => {
           <button
             onClick={onClear}
             className="border border-slate-300 font-medium text-xs py-2 px-4 rounded-lg shadow-sm
-                cursor-pointer hover:bg-slate-50 transition-colors"
+                cursor-pointer hover:bg-slate-50 bg-gradient-to-r from-primary to-primary-dark text-white"
           >
             Xóa nội dung tìm kiếm
           </button>

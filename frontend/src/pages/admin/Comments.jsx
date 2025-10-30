@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import { comments_data } from '../../assets/assets'
 import CommentTableItem from '../../components/admin/CommentTableItem'
 import { useAppContext } from '../../context/useAppContext'
 import toast from 'react-hot-toast'
@@ -32,7 +31,7 @@ const Comments = () => {
           ${filter === 'Approved' ? 'text-primary' : 'text-gray-700'}`}>Chấp nhận</button>
 
           <button onClick={()=> setFilter('Not Approved')} className={`shadow-custom-sm border rounded-full px-4 py-1 cursor-pointer text-xs
-          ${filter === 'Not Approved' ? 'text-primary' : 'text-gray-700'}`}>Không chấp nhận</button>
+          ${filter === 'Not Approved' ? 'text-primary' : 'text-gray-700'}`}>Chưa chấp nhận</button>
         </div>
       </div>
 

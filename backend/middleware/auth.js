@@ -8,7 +8,7 @@ const auth = (req, res, next) => {
         next();
     } catch (error) {
         res.json({
-            success: false, message: "Invalid token"
+            success: false, message: "Token không hợp lệ."
         })
     }
     
