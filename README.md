@@ -65,20 +65,27 @@ nguyenBlog/
 ```bash
 git clone <repository-url>
 cd nguyenBlog
+```
 
 
 ### Bước 2: Cài đặt dependencies
+```bash
 cd frontend
 npm install
+```
 
 
 ### Bước 3: Chạy ứng dụng
+```bash
 npm run dev
+```
 
 Ứng dụng sẽ chạy tại `http://localhost:5173`
 
 ### Bước 4: Build cho production
+```bash
 npm run build
+```
 
 ## 📝 Danh mục Blog
 
