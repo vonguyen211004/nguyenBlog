@@ -44,7 +44,7 @@ const Login = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Password:</span>
-                  <code className="px-2 py-1 rounded font-mono text-xs">123456</code>
+                  <code className="px-2 py-1 rounded font-mono text-xs">baonguyen123</code>
                 </div>
               </div>
             </div>
